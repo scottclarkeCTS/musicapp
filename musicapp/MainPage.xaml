@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                   x:Class="musicapp.MainPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="20, 40, 20, 20" />
+            <On Platform="Android, WinPhone, Windows" Value="20" />
+        </OnPlatform>
+    </ContentPage.Padding>
+    <!-- The code below determines the alyout ofthe buttons -->
+    <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical"
+                 Spacing="15">
+      <!-- This is the text that will be displayed on the app -->
+      <Label Text="Enter a song:" />
+      <Entry x:Name="songText" Text="" />
+      <Label Text="Enter an artist:" />
+      <Entry x:Name="artistText" Text="" />
+      <Label Text="Enter a genre:" />
+      <Entry x:Name="genreText" Text=""  />
+      <Label Text="Enter the song length:" />
+      <Entry x:Name="lengthText" Text=""/>
+      <Button x:Name="Add" Text="Add Song" Clicked="Added" />
+    
+    </StackLayout>
+</ContentPage>
