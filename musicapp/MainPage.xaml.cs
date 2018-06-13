@@ -17,6 +17,7 @@ namespace musicapp
         async void Added(object sender, EventArgs e)
         {
             DisplayAlert("Added", "The song has been added", "Okay");
+            Add.Text = "Added";
         }
 	}
 }
