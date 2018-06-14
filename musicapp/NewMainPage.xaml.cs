@@ -15,5 +15,9 @@ namespace musicapp
         {
             await Navigation.PushAsync(new MainPage());
         }
+        async void ThirdContinued(object sender, EventArgs eventArgs)
+        {
+            await Navigation.PushAsync(new ThirdPage());
+        }
     }
 }
