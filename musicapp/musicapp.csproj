@@ -10,4 +10,7 @@
   <ItemGroup>
     <Compile Remove="Third_Page.xaml.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Third_Page.xaml" />
+  </ItemGroup>
 </Project>

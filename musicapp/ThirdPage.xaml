@@ -14,5 +14,7 @@
                  Orientation="Vertical"
                  Spacing="15">
     <Label Text="Congatulations, you have made it to the third page."/>
+    <Label Text="Click this button below to proceed to the main page:"/>
+    <Button x:Name="MainPagefromThird" Text="Main Page" Clicked="ThirdMainPage"/>
     </StackLayout>
 </ContentPage>
